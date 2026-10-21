@@ -1,6 +1,5 @@
 # Intel 80C85 Altaids Computer
 
-https://store.nutsvolts.com/nuts-volts-magazine/sku17494
 
 [Build a Pocket-Sized Altair Computer](https://www.nutsvolts.com/magazine/article/build-a-pocket-sized-altair-computer) By David Hunter
 
