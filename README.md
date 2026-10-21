@@ -6,13 +6,6 @@
 
 <img width="800" height="465" alt="image" src="https://github.com/user-attachments/assets/856597c6-197b-4ee2-8710-257364489415" />
 
-<img width="3000" height="2000" alt="Altaids_20260930T" src="https://github.com/user-attachments/assets/eb51f439-bb2b-4391-9c12-3a2489df9a30" />
-
-
-https://www.tindie.com/products/retrocomputer/8085-chip-computer-pocket-sized-z80-altoids/
-
-https://www.tindie.com/products/nkk_electronic/8085-sbc-altair-style-mini-board-altoids/
-
 
 # Mint tin dimensions:
 Top lid outer (not lip): 2.36" (59.9mm) x 3.75"(95mm)  
