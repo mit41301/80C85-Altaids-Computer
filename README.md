@@ -5,9 +5,6 @@ Intel released the 8085 Microprocessor in March 1976. So by now it is more than 
 8085 was over shadowed by Z80 and other eight bit microprocessors. But it found a place in College and University. That may be one of the reason it lasted for long time.
 
 
-
-[Build a Pocket-Sized Altair Computer](https://www.nutsvolts.com/magazine/article/build-a-pocket-sized-altair-computer) By David Hunter
-
 <img width="1488" height="992" alt="MCS-85_Resize" src="https://github.com/user-attachments/assets/70ab12cd-9e81-48dd-a4de-86918fd241e8" />
 
 
