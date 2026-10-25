@@ -1,5 +1,10 @@
 # Intel 80C85 Altaids Computer
 
+Intel released the 8085 Microprocessor in March 1976. So by now it is more than 50 years. Like TIME MACHINE can be go back and build a 8085 computer? Even after fifty years we can still build a simple computer based on 8085.
+
+8085 was over shadowed by Z80 and other eight bit microprocessors. But it found a place in College and University. That may be one of the reason it lasted for long time.
+
+
 
 [Build a Pocket-Sized Altair Computer](https://www.nutsvolts.com/magazine/article/build-a-pocket-sized-altair-computer) By David Hunter
 
