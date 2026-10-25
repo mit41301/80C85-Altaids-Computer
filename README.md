@@ -3,8 +3,7 @@
 
 [Build a Pocket-Sized Altair Computer](https://www.nutsvolts.com/magazine/article/build-a-pocket-sized-altair-computer) By David Hunter
 
-
-<img width="800" height="465" alt="image" src="https://github.com/user-attachments/assets/856597c6-197b-4ee2-8710-257364489415" />
+<img width="1488" height="992" alt="MCS-85_Resize" src="https://github.com/user-attachments/assets/70ab12cd-9e81-48dd-a4de-86918fd241e8" />
 
 
 # Mint tin dimensions:
