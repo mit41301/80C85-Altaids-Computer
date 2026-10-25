@@ -11,16 +11,13 @@ Intel released the 8085 Microprocessor in March 1976. So by now it is more than 
 <img width="1488" height="992" alt="MCS-85_Resize" src="https://github.com/user-attachments/assets/70ab12cd-9e81-48dd-a4de-86918fd241e8" />
 
 
-# Mint tin dimensions:
-Top lid outer (not lip): 2.36" (59.9mm) x 3.75"(95mm)  
-Tin bottom: 2.3" (58.75mm) x 3.7"(93.9mm)  
-Inner: 2.24" (56.9mm) x 3.6"(91.5mm)  
-Height bottom section: 0.83" (21.28mm)  
-Height top section: "0.36 (9.26mm)  
-Corner radius .55" (14mm)  
+# Configuration:
 
-    "X": 91.44 mm  
-    "Y": 56.896 mm  
+I built my computer with 80C85 from OKI which consumes very less power compared to original D5085AH or P8085AH devices. The above design originally comes with 8kB RAM and 8kB EEPROM.  
+
+In my above picture I have used DS1225 NVRAM, replacing both RAM and EEPROM ICs. It works fine and retains the code and data even after power failure. But the risk is the original ROM or EEPROM IC 27C64 or 28C64 connected with the processor WRite lines. So it allows the processor to write and alter the code in ROM address space ranging from 0000H to 1FFFH. 
+
+ 
     
 
 <img width="987" height="1306" alt="image" src="https://github.com/user-attachments/assets/1422c0a1-fb00-426f-885c-bd13fba2893a" />
