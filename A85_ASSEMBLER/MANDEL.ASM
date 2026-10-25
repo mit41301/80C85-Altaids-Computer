@@ -1,5 +1,5 @@
 ; ============================================================
-; Mandelbrot for Intel 8050 / MCS-85 KIT
+; Mandelbrot for Intel 8080 / MCS-85 KIT
 ;
 ; Display: 79 x 23 characters
 ;
