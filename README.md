@@ -7,6 +7,17 @@ Intel released the 8085 Microprocessor in March 1976. So by now it is more than 
 
 <img width="1488" height="992" alt="MCS-85_Resize" src="https://github.com/user-attachments/assets/70ab12cd-9e81-48dd-a4de-86918fd241e8" />
 
+# MARS 
+<img width="800" height="417" alt="image" src="https://github.com/user-attachments/assets/c334782d-0dd8-4e28-be4f-c4c3b7435c52" />
+
+Dec. 4, 1996
+
+About the mission
+The Mars Pathfinder mission, designed to demonstrate a low-cost method for delivering a set of science instruments to the Red Planet, was the first wheeled vehicle to be used on any other planet in the solar system and served as the foundation for the Mars rovers of today.
+
+The mission landed a rover -- Sojourner -- on the surface of Mars using an air bag landing system and innovative petal design, which have been used since in various incarnations to land other rovers on the Red Planet. Sojourner spent 83 days of a planned seven-day mission exploring the Martian terrain, snapping photographs and taking chemical, atmospheric and other measurements.
+
+
 
 # Configuration:
 
