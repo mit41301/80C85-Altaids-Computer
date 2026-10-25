@@ -35,3 +35,6 @@ In my above picture I have used DS1225 NVRAM, replacing both RAM and EEPROM ICs.
 A85 8085 cross-assembler can be found from Herb Johnson's [SITE](https://www.retrotechnology.com/restore/a85.html) and it works on Windows 11!
 
 command line: A85 altaidsRom.asm -l altaids.lst -o altaids.hex  
+
+# TESTs
+
