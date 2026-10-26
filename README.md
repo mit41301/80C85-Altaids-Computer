@@ -36,5 +36,8 @@ A85 8085 cross-assembler can be found from Herb Johnson's [SITE](https://www.ret
 
 command line: A85 altaidsRom.asm -l altaids.lst -o altaids.hex  
 
-# TESTs
+# PRIME TESTs
+<img width="1217" height="671" alt="benchmark" src="https://github.com/user-attachments/assets/0ee04bcd-c2c7-481a-8975-0e04462866eb" />
+
+
 
