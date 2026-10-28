@@ -29,7 +29,11 @@ I built my computer with 80C85 from OKI which consumes very less power compared 
 In my above picture I have used DS1225 NVRAM, replacing both RAM and EEPROM ICs. It works fine and retains the code and data even after power failure. But the risk is the original ROM or EEPROM IC 27C64 or 28C64 connected with the processor WRite lines. So it allows the processor to write and alter the code in ROM address space ranging from 0000H to 1FFFH. 
 
 
-<img width="745" height="639" alt="image" src="https://github.com/user-attachments/assets/19a00114-7b47-4e2e-937a-37d5e69cfe48" />
+<img width="745" height="639" alt="image" src="https://github.com/user-attachments/assets/19a00114-7b47-4e2e-937a-37d5e69cfe48" />Altaids Computer 			
+Parts List			
+			
+
+<img width="745" height="683" alt="image" src="https://github.com/user-attachments/assets/4107d05a-32fd-406d-a8f9-10d15ced4f80" />
 
 
 # A85 8085 cross-assembler
