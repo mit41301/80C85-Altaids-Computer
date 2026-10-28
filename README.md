@@ -49,12 +49,10 @@ CP210x USB to UART Bridge VCP Drivers can be found from Silabs web site
 
 https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=overview
 
-# PRIME TESTs
-<img width="1217" height="671" alt="benchmark" src="https://github.com/user-attachments/assets/0ee04bcd-c2c7-481a-8975-0e04462866eb" />
-
 # SOFTWARE
 The system comes with a inbuilt powerful MONITOR program which runs by default after RESET. 
 Monitor commands
+```
 A : ALTAIR MONITOR
 B : TINY BASIC
 D : DUMP [Dnnnn mmmmm]
@@ -66,12 +64,18 @@ L : LOAD HEX FILE
 O : OUTPUT TO PRT 61H [Obb]
 R : DISPLAY REG
 T : TRACE (STEP) [Tnnnn]
+```
 
 ### A : ALTAIR MONITOR
 It is added just to show the legacy system. Here we need to enter all the numbers in OCTAL. The system output also will be in OCTAL number system.
 
 ### B : TINY BASIC
 By typing **B** it invokes the tinyBASIC version 1.0. To exit we can type **BYE** or CTRL+X 
+
+
+
+# PRIME TESTs
+<img width="1217" height="671" alt="benchmark" src="https://github.com/user-attachments/assets/0ee04bcd-c2c7-481a-8975-0e04462866eb" />
 
 
 # MARS 
