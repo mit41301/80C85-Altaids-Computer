@@ -24,9 +24,7 @@ Sojourner's central processing unit (CPU) was an Intel 80C85 with a 2 MHz clock,
 
 # Configuration:
 
-I built my computer with 80C85 from OKI which consumes very less power compared to original D5085AH or P8085AH devices. The above design originally comes with 8kB RAM and 8kB EEPROM.  
-
-In my above picture I have used DS1225 NVRAM, replacing both RAM and EEPROM ICs. It works fine and retains the code and data even after power failure. But the risk is the original ROM or EEPROM IC 27C64 or 28C64 connected with the processor WRite lines. So it allows the processor to write and alter the code in ROM address space ranging from 0000H to 1FFFH. 
+I built my computer with 80C85 from OKI which consumes very less power compared to original D5085AH or P8085AH devices. The above design originally comes with 8kB RAM and 8kB EEPROM. Instead of EEPROM I have used 27C64 8kB EPROM. At 5V power supply the computer consumes around 20mA only. 
 	
 # Parts List			
 			
@@ -38,6 +36,26 @@ In my above picture I have used DS1225 NVRAM, replacing both RAM and EEPROM ICs.
 A85 8085 cross-assembler can be found from Herb Johnson's [SITE](https://www.retrotechnology.com/restore/a85.html) and it works on Windows 11!
 
 command line: A85 altaidsRom.asm -l altaids.lst -o altaids.hex  
+
+# Tera Term
+We need a serial terminal to connect our computer to a Desktop or Laptop at 2400 baud. The Tera Term app is chosen due to easy file transfer capability and support for XMODEM protocol which is useful while working with tinyBASIC.  
+Tera Term is a free, open‑source terminal emulator for Windows that supports SSH, Telnet, and serial connections. We can find the latest release from Github at
+
+https://github.com/TeraTermProject/teraterm/releases
+
+While connecting with serial port, we should add the character and line delay as below.
+
+<img width="626" height="700" alt="TeraTerm" src="https://github.com/user-attachments/assets/85e847cb-b79e-48be-8e6d-aafd993717c9" />
+
+The delay is necessary for downloading large files using Send File option. But the delay is not required for XMODEM protocol transfer which is governed by it's own.
+
+# USB-TTL (CP2102 - 5 PINs)
+I have tested the computer with Prolific PL2303 USB-TTL cable with 4 wires. It is very useful since it comes with cable. But windows 10/11 will not support the PL2303 chip. There are fix for the issue. But the fix works for the particular USB port where it is connected. If we plug our computer to another USB port, Windows will not recognize the COM port and again we need to fix for the particular USB port. Similarly over a time, there may be some out of sync issues where we need to restart the PC and Tera Term for normal operation.
+Since we need only 4 signals VCC, GND, Tx and Rx I came across CP2102 with just 5 pins. With CP2102 chip there are no issues found till now. It also have onboard RED and BLUE LEDs which shows the connection status and traffic in the serial port. There is another version of CP2102 normally available in 6 pins.  
+
+CP210x USB to UART Bridge VCP Drivers can be found from Silabs web site 
+
+https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=overview
 
 # PRIME TESTs
 <img width="1217" height="671" alt="benchmark" src="https://github.com/user-attachments/assets/0ee04bcd-c2c7-481a-8975-0e04462866eb" />
