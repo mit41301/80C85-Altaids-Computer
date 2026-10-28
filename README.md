@@ -13,7 +13,7 @@ For example we can see STEP by STEP how the computer operates in real time. How 
 # Configuration:
 
 The design consists of only 6 ICs. CPU, ROM, RAM, LATCH, DECODER and DRIVER. It is bare minimum configuration but still we can do lot of things with this.
-The CPU is a CMOS version 8085 microprocessor with 8kB CMOS version EPROM and 8kB RAM. The computer operates at 4.9152MHz with the actual internal clock will be divided by two. We need a address LATCH to hold the higher address during memory access. The memory space is organized as 0000H~1FFFH the first 8kB for ROM and the next 2000H~3FFFH 8kB is alotted for RAM memory. There is a single IN/OUT port located at 60H(INPUT) and 61H(OUTPUT)
+The CPU is a CMOS version 8085 microprocessor with 8kB CMOS version EPROM and 8kB RAM. The computer operates at 4.9152MHz with the actual internal clock will be divided by two. We need a address LATCH to hold the higher address during memory access. The memory space is organized as (0000H-1FFFH) the first 8kB for ROM and the next 2000H-3FFFH 8kB is alotted for RAM memory. There is a single IN/OUT port located at 60H(INPUT) and 61H(OUTPUT)
 The CMOS version of the CPU consumes very less power and there is no heating observed. At 5V power supply the computer consumes around 20mA only. But with non COMS versions the current goes upto 110mA.
 	
 # Parts List			
