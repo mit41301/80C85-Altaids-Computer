@@ -14,9 +14,9 @@ AGAIN	RAL
 	POP	PSW
 	CC 	XOR8
 	JMP 	AGAIN
-XOR8	LDA 	2002
+XOR8	LDA 	AGAIN	;	2002
 	XRI 	08H
-	STA 	2002H	;	AGAIN ; 2002
+	STA 	AGAIN	;	2002H		
 	XRA 	A
 	STC
 	RET
@@ -26,7 +26,7 @@ XOR8	LDA 	2002
 ; Input: HL pair holds the 16-bit count (up to FFFFH)
 DELAY:
     LXI H, 0FFFFH    ; [10 T-states] Load HL with 65,535
-;    LXI H, 0002H    ; [10 T-states] Load HL with 65,535
+;     LXI H, 0002H    ; [10 T-states] Load HL with 65,535
 LOOP_16:
     DCX H           ; [6 T-states] Decrement HL pair
     MOV A, L        ; [4 T-states] Move Low byte to A
