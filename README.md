@@ -4,7 +4,7 @@ Intel released the 8085 Microprocessor in March 1976. So by now it is more than 
 
 8085 was over shadowed by Z80 and other eight bit microprocessors. But it found a place in College and University. That may be one of the reason it lasted for long time.
 
-![Uploading 8085.png…]()
+<img width="1008" height="756" alt="8085" src="https://github.com/user-attachments/assets/980e69d4-e566-49af-bb66-6c4e3638d243" />
 
 
 # MARS 
