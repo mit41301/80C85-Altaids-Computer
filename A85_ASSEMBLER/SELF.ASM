@@ -1,15 +1,17 @@
 	TITLE "Self modifying LED program for MCS-85"
 
 	ORG 2000H 	; RAM starts HERE
-	
-	XRA 	A
-	STC
+START   LXI H, 4000h 	; load HL pair with RAM end location
+	SPHL		; init Stack Pointer	
+
+	XRA 	A	; clear ACCumulator
+	STC		; set CARRY bit
 AGAIN	RAL
 	OUT 	61H
-;;	PUSH	PSW
-;;	CALL 	DELAY
-;	CALL 	DELAY
-;;	POP	PSW
+	PUSH	PSW
+	CALL 	DELAY
+	CALL 	DELAY
+	POP	PSW
 	CC 	XOR8
 	JMP 	AGAIN
 XOR8	LDA 	2002
@@ -23,8 +25,8 @@ XOR8	LDA 	2002
 ; --- 16-bit Delay Routine ---
 ; Input: HL pair holds the 16-bit count (up to FFFFH)
 DELAY:
-;    LXI H, 0FFFFH    ; [10 T-states] Load HL with 65,535
-    LXI H, 0002H    ; [10 T-states] Load HL with 65,535
+    LXI H, 0FFFFH    ; [10 T-states] Load HL with 65,535
+;    LXI H, 0002H    ; [10 T-states] Load HL with 65,535
 LOOP_16:
     DCX H           ; [6 T-states] Decrement HL pair
     MOV A, L        ; [4 T-states] Move Low byte to A
