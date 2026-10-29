@@ -1,0 +1,16 @@
+   2000                 	ORG 2000H	; Origin of the CODE
+   2000   2a 30 20      	LHLD Var116	; Load HL pair direct from 2030(Var1)
+   2003   eb            	XCHG		; Exchange HL with DE pair
+   2004   2a 32 20      	LHLD Var216	; Load the next 16 bit value into HL
+   2007   19            	DAD D		; Perform double addition
+   2008   22 34 20      	SHLD Res16	; STORE the result at Res16
+   200b   76            	HLT		; MOV M,M
+                        
+   2030                 	ORG 2030H	; Database STARTING location
+   2030   8d 04         Var116	DW 1165D	; 048D <- HEX
+   2032   a7 0d         Var216	DW 3495D	; 0DA7 <- HEX
+   2034   00 00         Res16	DW 0000H	; 1234 <- HEX RESULT
+                        			; 4660 <- DEC RESULT		
+   2036                 	END
+2034  Res16         2030  Var116        2032  Var216        
+

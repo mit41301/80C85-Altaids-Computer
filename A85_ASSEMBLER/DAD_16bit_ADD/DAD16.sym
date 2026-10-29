@@ -1,0 +1,3 @@
+Res16       EQU   2034H
+Var116      EQU   2030H
+Var216      EQU   2032H
