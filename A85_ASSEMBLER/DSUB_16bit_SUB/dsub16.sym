@@ -1,0 +1,3 @@
+Answer      EQU   2022H
+DSUB        EQU   2008H
+Minuend     EQU   2020H
