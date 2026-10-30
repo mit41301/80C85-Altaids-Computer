@@ -1,25 +1,0 @@
-                        ;########################################################	
-                        	TITLE "16 bit Subtraction using DSUB instruction"
-                        ;########################################################
-                        ; 	DSUB Opcode 08H (H)(L)=(H)(L)-(B)(C)
-                        
-   2000                 	ORG	20000Q	; Origin of the CODE
-                        
-   2000   06 ec         	MVI	B,60584/400Q	; 0ECH load B with Subtrahend MS Byte
-   2002   0e a8         	MVI	C,60584 MOD 256	; 0A8H Load C with Subtrahend LS Byte
-   2004   2a 20 20      	LHLD	Minuend	; load the Minuend 
-   2007   00            	NOP		; Give some rest
-   2008   08            DSUB	DB	08H	; DSUB (H)(L)=(H)(L)-(B)(C)
-   2009   22 22 20      	SHLD	Answer	; STORE the result at Answer
-   200c   c3 00 10      	JMP	$-100CH	; Jump to Monitor
-   200f   76            	HLT		; MOV M,M
-                        
-   2020                 	ORG 2020H	; Database STARTs HERE
-   2020   dc fe         Minuend	DW 65244	; 0FEDCH <- HEX-DEC->65,244
-   2022   ff ff         Answer	DW -1		; 1234H <- HEX RESULT(FEDCH-ECA8H)
-                        			; 4660D (65,244-60,584)<- DEC RESULT		
-   2008                 	END DSUB
-16 bit Subtraction using DSUB instruction
-
-2022  Answer        2008  DSUB          2020  Minuend       
-
