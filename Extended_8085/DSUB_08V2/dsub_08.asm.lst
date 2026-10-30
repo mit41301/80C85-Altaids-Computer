@@ -1,0 +1,24 @@
+0000                    	CPU 8085U
+                        ;########################################################	
+                        ;	TITLE "16 bit Subtraction using DSUB instruction"
+                        ;########################################################
+                        ; 	DSUB Opcode 08H (H)(L)=(H)(L)-(B)(C)
+
+2000                    	ORG	2000H	 ; Origin of the CODE
+
+2000  01 A8EC              	LXI B,Subtrahend ; load BC pair with Subtrahend
+2003  2A 2020              	LHLD Minuend	 ; load the Minuend
+2006  08                   	DSUB		 ; DSUB (H)(L)=(H)(L)-(B)(C)
+2007  22 2220              	SHLD Answer	 ; STORE the result at Answer
+200A  C3 0010              	JMP $-100AH	 ; Jump to Monitor
+
+2020                    	ORG 	2020H	; Database STARTs HERE
+
+2020  DCFE              Minuend	   DW  65244	; FEDCH <- HEX-DEC->65,244
+      = ECA8            Subtrahend EQU 60584	; ECA8H <- HEX-DEC->60,584
+2022  FFFF              Answer	   DW -1	; 1234H <- HEX RESULT(FEDCH-ECA8H)
+                        			; 4660D (65,244-60,584)<- DEC RESULT		
+
+00000 Total Error(s)
+
+ANSWER             00002022    MINUEND            00002020    SUBTRAHEND         0000ECA8 E
