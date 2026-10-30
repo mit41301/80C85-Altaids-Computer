@@ -1,0 +1,27 @@
+0000                    	CPU 8085U
+                        ;########################################################	
+                        ;	TITLE "RDEL instruction"
+                        ;########################################################
+                        ; 	RDEL Opcode 18H
+
+2000                    	ORG	2000H	; Origin of the CODE
+
+2000  2A 2020           	LHLD DATA16	; Load the 16 bit data
+
+2003  EB                	XCHG		; Exchange with DE
+2004  18                	RDEL		; RDEL [18H] Instruction
+2005  EB                	XCHG		; Exchange with HL
+
+2006  22 2220           	SHLD	Answer	; STORE the result at Answer
+2009  C3 FD0F           	JMP	$-100CH	; Jump to Monitor
+200C  76                	HLT		; MOV M,M
+
+2020                    	ORG 2020H	; Database STARTs HERE
+2020  3412              DATA16	DW 1234H	; 1234H <- HEX-DEC->
+2022  FFFF              Answer	DW -1		; 2468H <- HEX RESULT
+                        			; 		
+                        ;	END
+
+00000 Total Error(s)
+
+ANSWER             00002022    DATA16             00002020
