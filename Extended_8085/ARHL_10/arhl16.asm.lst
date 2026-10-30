@@ -1,0 +1,26 @@
+0000                    	CPU 8085U
+                        ;########################################################	
+                        ;	TITLE "ARHL instruction"
+                        ;########################################################
+                        ; 	ARHL Opcode 10H (H)(L)=(H)(L)-(B)(C)
+
+2000                    	ORG	2000H	; Origin of the CODE
+
+2000  2A 2020           	LHLD	DATA16	; load the Minuend
+2003  37                	STC
+
+2004  10                	ARHL		; ARHL Instruction
+
+2005  22 2220           	SHLD	Answer	; STORE the result at Answer
+2008  C3 FC0F           	JMP	$-100CH	; Jump to Monitor
+200B  76                	HLT		; MOV M,M
+
+2020                    	ORG 2020H	; Database STARTs HERE
+2020  4444              DATA16	DW 4444H	; 4444H <- HEX-DEC->
+2022  FFFF              Answer	DW -1		; 2222H <- HEX RESULT
+                        			; 		
+                        ;	END
+
+00000 Total Error(s)
+
+ANSWER             00002022    DATA16             00002020
