@@ -1,0 +1,3 @@
+COUT        EQU   1021H
+MONI        EQU   1000H
+MSG         EQU   2009H
