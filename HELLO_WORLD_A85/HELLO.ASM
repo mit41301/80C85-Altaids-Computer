@@ -15,7 +15,7 @@
 	CALL    COUT	; send a char pointed out by DE
 	CALL	MONI    ; return to MONITOR. No RESET required
 	
-MSG     DB      0DH,0AH,'hello, world\n',0AH,0
+MSG     DB      0DH,0AH,'hello, world',0DH,0AH,0
 MONI    EQU	1000H	; monitor start address
 COUT	EQU	1021H	; monitor routine
 	END
