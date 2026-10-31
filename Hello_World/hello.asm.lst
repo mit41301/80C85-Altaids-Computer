@@ -1,0 +1,27 @@
+                        ; Hello.ASM
+                        ; asmx20 -l -o -w -e -C 8085 hello.asm
+                        ; 31 OCT 2026
+                        ;
+                        ; #include <stdio.h>
+                        ;
+                        ; main()
+                        ; {
+                        ;     printf("hello, world\n");
+                        ; }
+
+2000                    	ORG	2000H	;load and run from address 2000H
+
+2000  11 0920           	LXI 	D, MSG	; load message starting address in DE
+2003  CD 2110           	CALL    COUT	; send a char pointed out by DE
+2006  CD 0010           	CALL	MONI    ; return to MONITOR. No RESET required
+                        	
+2009  0D0A6865 6C6C6F2C MSG     DB      0DH,0AH,'hello, world\n',0AH,0
+2011  20776F72 6C640A0A
+2019  00
+      = 1000            MONI    EQU	1000H	; monitor start address
+      = 1021            COUT	EQU	1021H	; monitor routine
+201A                    	END
+
+00000 Total Error(s)
+
+COUT               1021 E  MONI               1000 E  MSG                2009
